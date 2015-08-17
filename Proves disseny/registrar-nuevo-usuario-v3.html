@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro - Mammbo</title>
+	
+		<meta charset="UTF-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-language" content="es_ES" />
+		<meta name="title" content="Configura tu anuncio y encuentra piso - Mammbo" />
+		<meta name="author" content="Mammbo" />
+		<meta name="description" content="Configura tu anuncio en 10 minutos y encuentra tu casa, piso, garage o párking" />
+		<meta name="keywords" content="casa, piso, parking, comprar casa, comprar piso, alquilar casa, alquilar piso, busco casa, busco piso, plaza de parking" />
+		<meta name="copyright" content="Mammbo, busca-encuentra inmueble" />
+		<meta name="robots" content="configuration,follow" />
+		<meta name="googlebot" content="configuration,follow" />
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+
+		<meta content="@bemammbo" name="twitter:site">
+		<meta content="mammbo.com" name="domain">
+		<meta content="website" property="og:type">
+
+	<link rel="stylesheet" href="stylesheet/normalize-ext.css">	
+	<link rel="stylesheet" href="stylesheet/sign-up-v3.css" title="Estilo del formulario de ingresso" type="text/css" media="screen" charset="utf-8" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+
+</head>
+
+<body>
+<header class="docs nav">
+	        <div class="row-fluid">
+		        <div class="brand">
+		              <a href="index.html" rel="prev" target="_self"><img src="images/LogoPetit.png" alt="Logo provisional Mammbo"  width="250px" height="70px"></a>
+	            </div>
+	        </div>
+</header>
+
+<div class="container">
+ <div class="sign-form">
+	<div class="heading">
+		<h1>Cree su cuenta ahora</h1>
+	</div>
+			
+	<form class="n" method="POST" name="form" novalidate="">
+		<div class="split-field">
+			<div class="field">
+				<input class="ng-pristine ng-untouched ng-invalid ng-invalid-required" type="text" required="" name="Nombre" ng-model="user.firstName" placeholder="First Name" autofocus />
+				<div class="alert simple ng-hide" ng-show="form.uFirst.$error.required && showErrors">Es necesario que escriba su nombre</div>
+			</div>
+			<div class="field">
+				<input class="ng-pristine ng-invalid ng-invalid-required ng-touched" type="text" required="" name="Apellido" ng-model="user.lastName" placeholder="Last Name">
+			<div class="alert simple ng-hide" ng-show="form.uLast.$error.required && showErrors">Es necesario que escriba su apellido</div>
+		</div>
+		</div>
+								
+		<div class="field">
+						<input class="ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-email" type="email" ng-class="{ showError: showErrors}" required="" name="email" ng-model="user.email" placeholder="Email">
+						<div class="alert simple ng-hide" ng-show="(form.email.$error.required || form.email.$error.email) && showErrors">Éste correo electrónico no es válido
+						</div>
+		</div>
+								
+		<div class="field">
+						<input class="ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-minlength" type="password" ng-class="{ showError: showErrors}" required="" ng-minlength="6" name="password" ng-model="user.password" placeholder="Password">
+						<div class="alert simple ng-hide" ng-show="(form.password.$error.minlength || form.password.$error.required) && showErrors">La contraseña debe tener al menos 6 caracteres
+						</div>
+		</div>
+			<p class="text-legal">
+			<input type="checkbox"  required />
+				Registrarse en Mammbo significa que acepta nuestra
+				<a href="privacy.html" target="_blank">Política de Privacidad</a>
+				i nuestros
+				<a href="legal.html" target="_blank">Términos de servicio</a>
+				.
+			</p>
+	
+		<div class="g-recaptcha" data-sitekey="6Ld5kwETAAAAALBALYwiRZJRT97Id0FZnVpvNi2O"></div>
+		<button class="btn btn-hereda btn-next  create-account" ng-disabled="saving" ng-click="saveUser()">
+			Crear cuenta
+			<i class="icon arrow-right-big-white"></i>
+		</button>
+	</form>				
+		<div class="other-links">
+			<a class="fade-link" href="login.html">¿Ya está registrado?</a>
+		</div>
+	</div>
+</div>
+</div>
+    <footer>
+        <div class="footer-logo text-center">
+            <span>beMammbo</span>
+        </div>
+    </footer>
+			
+<script>
+setInterval(function() {
+$('#signup input:visible').each(function(){
+$(this).trigger('input');
+});
+}, 300);
+</script>
+
+</body>
+</html>

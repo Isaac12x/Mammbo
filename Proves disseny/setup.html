@@ -1,0 +1,172 @@
+
+<meta http-equiv="Content-Type" content="text/html ;charset=UTF-8" />
+<!-- Copiar i enganxar el frame de l'inici -->
+
+<div class="anounce-frame">
+	<h1>Vamos a configurar juntos su anuncio</h1>
+		<section><p>El le guiará a través del proceso</p></section>
+		<section><p> Empieza rellenando estos datos básicos</p></section>
+		
+	<div class="anounce">
+		<div class="announce-basics">
+			<div class="action">
+				<form id="plan">
+					<label for="action-lab"> Quiere alquilar o comprar? </label> 
+					<input type="radio" name="rent" value="rent" checked /> Alquilar
+					<input type="radio" name="buy" value="buy"/> Comprar
+					<!-- PRÓXIMAMENTE -->
+					<!-- <input type="radio" name="tipo1" value="share" /> Compartir
+					<input type="radio" name="tipo1" value="holiday" /> Vacacional -->
+				</form>
+			</div>
+			second-overlay
+			<div class="real-state-type">
+				<form id="plan">
+					<label for="property"> Qué tipo de inmueble está buscando? </label> 
+					<input type="checkbox" name="flat" value="flat" /> Piso
+					<input type="checkbox" name="family-house" value="family-house"/> Vivienda unifamiliar
+					<input type="checkbox" name="attic" value="attic" /> Ático
+					<input type="checkbox" name="duplex" value="duplex" /> Dúplex
+					<input type="checkbox" name="gound-floor" value="ground-floor" /> Planta baja
+					<input type="checkbox" name="loft" value="loft" /> Loft
+					<input type="checkbox" name="garage" value="garage" /> Garage
+					<input type="checkbox" name="parking" value="parking" /> Plaza de párking
+					<!-- PRÓXIMAMENTE -->
+					<!-- 
+					<input type="radio" name="tipo1" value="compartir" /> Estudio
+					<input type="radio" name="tipo1" value="compartir" /> Local comercial
+					<input type="radio" name="tipo1" value="compartir" /> Terreno
+					<input type="radio" name="tipo1" value="compartir" /> Oficina
+					<input type="radio" name="tipo1" value="compartir" /> Otros 
+					-->
+
+				</form>
+			</div>
+			third-overlay
+			<div class="location">
+				<form action="" method="post">
+					<label for=""> En qué localidad le interesaría buscar? </label>
+					<input type="text" palceholder="p.e. 28003, Madrid" name="insert-location" size="40"/> 
+				</form>
+				<p>Quiere más precision? Click <a href="">aquí</a></p>
+
+				<div class="optional"> 
+					<div class="location-specifics">
+						<form action="" method="post">
+							<label> Puede incluso ser más preciso en la localización</label>
+							<input type="text" palceholder="p.e. Paseo de la Castellana XX, 28003, Madrid" name="insert-location" size="40"/> 
+							<!-- Aquí cargar la API de google MAPS -->
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		fourth-overlay
+		<div class="announce-advanced">
+			<form class="appearence">
+				<label for="appearence-lab"> Estado del inmueble </label> 
+				<input type="radio" name="" value="" checked /> Indiferente
+				<input type="radio" name="" value="" /> Para reformar
+				<input type="radio" name=" " value="" /> Con pequeños desperfectos
+				<input type="radio" name="" value="" /> En buen estado (general)
+				<input type="radio" name="" value="" /> En muy buen estado (particular)
+			</form>	
+		fifth-overlay
+			<form class="rooms-number">
+				<label for="rooms-number-lab"> Número de habitaciones </label> 
+						
+				<input list="number-of-rooms" name="rooms" />
+				<datalist id="number-of-rooms">
+					<option value="1" label="1" />
+					<option value="2" label="2" />
+					<option value="3" label="3" />
+					<option value="4" label="4" />
+					<option value="5" label="5" />
+				</datalist>
+				<p>Quiere más habitaciones? Click <a href ="">aquí</a></p>
+					<label for=""> Número de habitaciones</label>
+					<input type="text" name="more-rooms-inp" placholder="Escriba el número aquí" />
+			</form>
+		sexth-overlay
+			<form class="meters">
+				<label for="meters-lab"> Metros quadrados </label> 
+				<input list="meters2" name="meters2" />
+				<datalist id="meters2" >
+					<option value="30 - 50 m2" label="30 - 50 m2" />
+					<option value="51 - 150 m2" label="51 - 150 m2" />
+					<option value="151 - 250 m2" label="151 - 250 m2" />
+					<option value="251 - 350 m2" label="251 - 350 m2" />
+					<option value="351 - 450 m2" label="351 - 450 m2" />
+					<option value="+451 m2" label="+451 m2" />
+				</datalist>
+			</form>
+		seventh-overlay
+			<form class="restroom">
+				<label for="restrooms-lab"> Número de baños </label> 
+				<input list="number-of-baths" name="bath" />
+				<datalist id="number-of-baths">
+					<option value="1" label="1" />
+					<option value="2" label="2" />
+					<option value="3" label="3" />
+					<option value="4" label="4" />
+					<option value="5" label="5" />
+				</datalist>
+			</form>
+		eight-overlay
+			<form class="terrace">
+				<label for="terraces-lab"> Número de terrazas</label>
+				<input list="number-of-terraces" name="terraces" />
+				<datalist id="number-of-terraces">
+					<option value="No quiero terraza" label="No quiero terraza" />
+					<option value="1" label="1" />
+					<option value="2" label="2" />
+					<option value="3" label="3" />
+					<option value="4" label="4" />
+					<option value="5" label="5" />
+				</datalist>
+			</form>
+		nineth-overlay
+			<form class="balcony">
+				<label for="balconies-lab"> Número de balcones</label>
+				<input list="number-of-balconies" name="balconies-numb" />
+				<datalist id="number-of-balconies">
+					<option value="No quiero balcón" label="No quiero balcón" />
+					<option value="1" label="1" />
+					<option value="2" label="2" />
+					<option value="3" label="3" />
+					<option value="4" label="4" />
+					<option value="5" label="5" />
+				</datalist>
+			</form>
+				
+		tenth-overlay
+			<!-- Seria molt guapo amb si/no i que si posses que si  obrir un desplegable a sota -->
+			<form class="options">
+				<label for="include"> Añada las prestaciones que más lee intresen del listado siguiente</label>
+			 
+				<input type="checkbox" name="" value="" /> + Mueblado 
+				<input type="checkbox" name="" value="" /> + Armarios encastados
+				<input type="checkbox" name="" value="" /> + Jardín (m<sup>2</sup>)
+				<input type="checkbox" name="" value="" /> + Plaza de parking
+				<input type="checkbox" name="" value="" /> + Garaje privado 
+				<input type="checkbox" name="" value="" /> + Chimenea (1/2/3+)
+				<input type="checkbox" name="" value="" /> + Piscina (m<sup>2</sup>)
+				<input type="checkbox" name="" value="" /> + Ascensor 
+				<input type="checkbox" name="" value="" /> + Cerca de transporte público
+				<input type="checkbox" name="" value="" /> + Trastero
+				<input type="checkbox" name="" value="" /> + Aire acondicionado ( 1/2/3/4/5+ con bomba de calor)
+				<input type="checkbox" name="" value="" /> + Calefacción (option gas/electrica - radiador/suelo radial)
+			</form>
+		</div>
+		<div class="plus">
+			<p>Si le falta alguna característica que no hemos contemplado en el anuncio por favor le rogamos que se ponga en contacto con nosotros para que la podamos habilitar lo más rápido posible.</p>
+		</div>
+	
+		<div class="send">
+			<input name="send-to-db" type="submit" value="Enviar" />
+		</div>
+	</div>
+</div>
+
+<!-- enganxar el footer-marc de l'inici -->
