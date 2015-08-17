@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+	<title>Configura tu anuncio y encuentra piso - Mammbo</title>
+	    <meta charset="UTF-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-language" content="es_ES" />
+		<meta name="title" content="Configura tu anuncio y encuentra piso - Mammbo" />
+		<meta name="author" content="Mammbo" />
+		<meta name="description" content="Configura tu anuncio en 10 minutos y encuentra tu casa, piso, garage o párking" />
+		<meta name="keywords" content="casa, piso, parking, comprar casa, comprar piso, alquilar casa, alquilar piso, busco casa, busco piso, plaza de parking" />
+		<meta name="copyright" content="Mammbo, busca-encuentra inmueble" />
+		<meta name="robots" content="configuration,follow" />
+		<meta name="googlebot" content="configuration,follow" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=1" />
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="stylesheet/base.css" />
+	<link rel="stylesheet" href="stylesheet/advert-style.css" />
+  	<script src="javascript/modernizr.custom.js"></script>
+</head>
+<body>
+<div class="mobile-nav">
+    <ul>
+      <li class="title">Menú</li>
+      <li><a href="#">+ Anuncio</a></li>
+      <li><a href="#">Vista</a></li>      
+      <li><a href="#">Perfil</a></li>      
+      <li><a href="#">Salir</a></li>
+      <label>Idiomas</label>      
+      <li><a href="lang-CA.html" rel="alternate" hreflang="ca" title="Cambia el idioma a Catlán">CA</a></li> 
+      <li><a href="lang-EN.html" rel="alternate" hreflang="en" title="Change language to Englis">EN</a></li>     
+    </ul>
+  </div>
+  
+  <header class="docs nav">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="brand animated bounceInLeft">
+          <a href="index.html" rel="prev" target="_self"><img src="images/logo_mammbo_icono.svg" alt="Logo Mammbo"></a>
+        
+          <nav class="right-float animated bounceInRight mobile-hidden tablet-hidden small-screen-hidden">
+            <a href="#" title="Crea tu anuncio personalizado">+ Anuncio</a>
+            <a href="#" title="Retoca tu anuncio para que quede perfecto">Vista </a>
+            <a href="profile.html" rel="nofollow" title="Entra en tu perfil">Perfil</a>
+            <a href="" rel="follow" title="Hasta pronto!">Salir</a>
+          </nav>
+        </div>
+        <div id="hamburger" class="container nav-toggle show-mobile show-tablet show-small-screen animated bounceInRight">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+	
+	<main>
+	<div class="container">
+		<header class="mammbo-header">
+			<h1>Vamos a dar un paso adelante...</h1>	
+			<h2>vamos a convertirle en el <strong><u>Rey/Reina del Mammbo</u></strong></h2>
+		</header>
+			
+		<section>
+			<p>Puede navegar en el asistente de creación hacía delante y hacía atrás con las flechas que hay en el borde inferior de la página</p>
+			<p>Puede cerrar el asistente en cualquier momento con el aspa de arriba a la derecha y continuar cuando guste.</p>
+			<p>Esperamos que sea de su agrado.</p>
+			<p><button id="trigger-overlay" type="button" class="butn btn-general btn-specific" >Crear Anuncio</button></p>
+		</section>
+	</div>
+
+	<!-- /container -->
+
+	</main>
+
+    <footer>
+        <div class="footer-logo text-center">
+            <span>beMammbo</span>
+        </div>
+        <ul>
+            <li>//Mammbo &copy; 2015</li>
+            <li class="font-sm">|</li>
+            <li><a rel="nofollow" href="aviso-legal.html" class="non-active" title="Legalidad de Mammbo">Aviso legal</a></li>
+            <li class="font-sm">|</li>
+            <li><a rel="nofollow" href="politica-de-privacidad.html" class="non-active" title="Nuestra política de privacidad">Política de privacidad</a></li>
+            <li class="font-sm">|</li>
+            <li><a rel="nofollow" href="mailto:mammbo@mammbo.com" class="">Contacto</a></li>
+            <li class="font-sm">|</li>
+        </ul>
+    </footer>
+
+
+	<div class="overlay overlay-contentscale">
+			<button type="button" class="overlay-previous hide">Next</button>
+			<button type="button" class="overlay-close">Close</button>
+
+		<nav>
+			<div>
+				<label class="label-overlay padding-bottom" for="action"> Quieres alquilar o comprar? </label> 
+			</div>
+		<ul>
+			<li><input type="radio" class="hide"/>Alquilar</li>
+			<li><input /> Alquiler con opción a compra</li>
+			<li><input />Comprar</li>
+		</ul>
+		</nav>	
+
+		<button type="button" class="overlay-next">Next</button>
+	</div>
+
+<!-- # Property's Overlay -->	
+<div class="second-overlay">
+	<label class="label-overlay padding-bottom">Qué tipo de propiedad buscas?</label>
+	<div id="property">
+		<input type="radio" name="property" id="">Casa
+		<input type="radio" name="property" id="">Piso
+		<input type="radio" name="property" id="">Oficinas
+		<input type="radio" name="property" id="">Terrenos 
+		<input type="radio" name="property" id="">Locales
+	</div>
+</div> 
+<!-- /Overlay -->
+
+<!-- # Location's Overlay -->	
+<div class="third-overlay">
+	<label class="label-overlay padding-bottom">¿Dónde quiere buscar?</label>
+	<div id="location">
+		<input type="text" name="searchbox" id="">
+		<input type="checkbox" name="" id=""> Muestralo en un mapa
+	</div>
+</div> 
+<!-- /Overlay -->
+
+
+
+<!-- # Proprety's appearence Overlay -->
+	<label class="label-overlay padding-bottom">Apariencia</label>
+	<div id="appearence">
+		<input list="appearence" />
+		<datalist id="appearence">
+			<option value="Perfecto"></option>
+			<option value="Muy buen estado"></option>
+			<option value="Cuidado"></option>
+			<option value="Con desperfectos"></option>
+			<option value="Mal estado"></option>
+			<option value="Para reformar"></option>
+		</datalist>
+	</div>
+</div> 
+
+<!-- #Piso, casa, oficina -->
+<div class="fourth-overlay"> 
+<label> Estado del inmueble</label>
+			<section>
+				<select id="fourthCoice" class="cs-select cs-skin-elastic">
+					<option value="" disabled selected>Escoge </option>
+					<option value="Buen estado">Buen estado</option>
+					<option value="Bastante bien">Bastante bien</option>
+					<option value="Para reformar">Para reformar</option>
+					<option value="Mueblado">Mueblado</option>
+				</select>
+			</section>
+
+<label>Número de habitaciones</label>
+			<section>
+				<select id="fifthCoice" class="cs-select cs-skin-elastic">
+					<option value="" disabled selected>Escoge </option>
+					<option value="Buen estado">Buen estado</option>
+					<option value="Bastante bien">Bastante bien</option>
+					<option value="Para reformar">Para reformar</option>
+					<option value="Mueblado">Mueblado</option>
+				</select>
+			</section>
+</div>
+
+
+<!-- /Overlay -->
+<!-- # Rooms' Overlay -->	
+<div class="fifth-overlay">
+	<label class="label-overlay padding-bottom">Número de habitaciones</label>
+	<div id="rooms">
+		<input type="text" name="" id="" maxlength="2" placeholder="">
+		<input list="rooms" />
+		<datalist id="rooms">
+			<option value="2"></option>
+			<option value="3"></option>
+			<option value="4"></option>
+			<option value="5"></option>
+			<option value="6"></option>
+			<option value="7"></option>
+			<option value="Más"></option>
+		</datalist>
+	</div>
+</div> 
+<!-- /Overlay -->
+<!-- # Space's Overlay -->	
+<div class="sixth-overlay">
+	<label class="label-overlay padding-bottom">Espacio en m<sup>2</sup></label>
+		<input list="metros" />
+		<datalist id="metros">
+			<option value="100 - 200"></option>
+			<option value="201 - 301"></option>
+			<option value="302 - 401"></option>
+			<option value="402 - 501"></option>
+			<option value="Más"></option>
+		</datalist>
+</div> 
+<!-- /Overlay -->
+<!-- # Restrooms' Overlay -->	
+<div class="seventh-overlay">
+	<label class="label-overlay padding-bottom">Número de baños</label>
+		<input list="restrooms" />
+		<datalist id="restrooms">
+			<option value="1"></option>
+			<option value="2"></option>
+			<option value="3"></option>
+			<option value="4"></option>
+			<option value="5"></option>
+			<option value="Más"></option>
+		</datalist>
+</div> 
+<!-- /Overlay -->
+<!-- # Terraces' Overlay -->	
+<div class="eight-overlay">
+	<label class="label-overlay padding-bottom">Número de terrazas</label>
+		<input list="terraces" />
+		<datalist id="terraces">
+			<option value="1"></option>
+			<option value="2"></option>
+			<option value="3"></option>
+			<option value="4"></option>
+			<option value="Más"></option>
+		</datalist>
+</div> 
+<!-- /Overlay -->
+<!-- # Balconies' Overlay -->
+<div class="nineth-overlay">
+	<label class="label-overlay padding-bottom">Número de balcones</label>
+		<input list="balconies" />
+		<datalist: id="balconies">
+			<option value="1"></option>
+			<option value="2"></option>
+			<option value="3"></option>
+			<option value="4"></option>
+			<option value="Más"></option>
+		</datalist:>
+</div> 
+<!-- /Overlay -->
+<!-- # More options' Overlay -->	
+<div class="tenth-overlay">
+	<label class="label-overlay padding-bottom">Más opciones</label>
+	<input type="text" class="text">
+
+
+</div> 
+<!-- /Overlay -->
+
+	<script src="javascript/main.js"></script>
+	<script src="javascript/function.js"></script>
+	<script src="javascript/next.js"></script>
+
+	 <script>
+	    $('.fade, .first, .second, .third').waypoint(function () {
+	        $(this).toggleClass('animated fadeInDown animate');
+	    }, {
+	        offset: '80%',
+	        triggerOnce: true
+	    });
+	    
+	    $('.nav-toggle').click(function(){
+	      $('.mobile-nav').toggleClass('is-open');
+	      $('#hamburger').toggleClass('open');
+	    });
+	 </script>
+
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-59252903-1', 'auto');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
+
+	<script src="https://cdn.flurry.com/js/flurry.js"></script>
+    <script>FlurryAgent.startSession("Q4NCVCD4CSKR2SGC8H92");
+    FlurryAgent.setLocation(latitude, longitude, accuracy);</script>
+    
+	</body>
+</html>

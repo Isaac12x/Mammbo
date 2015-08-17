@@ -1,0 +1,71 @@
+/* //Mammbo © 2015 */
+
+/***************************************************************** 
+*
+*  General styling
+*
+*****************************************************************/
+body{
+  background: rgb(245, 246, 247) url(images/gradient_texture20100901.jpg) repeat-x 0 0;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.3125;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+}
+
+.render{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+}
+.render-frame{
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  border-radius: 7px;
+  color: rgb(78, 91, 104);
+  background-color: rgb(240, 241, 243);
+  border: 1px solid #ddd;
+  box-sizing: inherit;
+  padding: 3%;
+}
+
+.docs.nav {
+  border-bottom: 2px solid #ddd;
+  margin:0;
+}
+
+.footer-render{
+  bottom: 0;
+  width: 100%;
+  margin-top:0;
+}
+
+.footer-logo {
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 2.7rem;
+  margin-top: 3rem;
+  font-family: 'Helvetica Neue';
+}
+
+.footer-logo span {
+  border: 1px solid #85b91e;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  padding: 3px 11px;
+  background-color: #85b91e;
+}
+

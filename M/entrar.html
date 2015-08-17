@@ -1,0 +1,84 @@
+
+!DOCTYPE html>
+<html>
+<head>
+	<title>Entrar - Mammbo</title>
+	
+		<meta charset="UTF-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-language" content="es_ES" />
+		<meta name="title" content="Configura tu anuncio y encuentra piso - Mammbo" />
+		<meta name="author" content="Mammbo" />
+		<meta name="description" content="Configura tu anuncio en 10 minutos y encuentra tu casa, piso, garage o párking" />
+		<meta name="keywords" content="casa, piso, parking, comprar casa, comprar piso, alquilar casa, alquilar piso, busco casa, busco piso, plaza de parking" />
+		<meta name="copyright" content="Mammbo, busca-encuentra inmueble" />
+		<meta name="robots" content="configuration,follow" />
+		<meta name="googlebot" content="configuration,follow" />
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+
+		<meta content="@bemammbo" name="twitter:site">
+		<meta content="mammbo.com" name="domain">
+		<meta content="website" property="og:type">
+
+	<link rel="stylesheet" href="stylesheets/normalize.css"  type="text/css" media="screen" charset="utf-8" />
+	<link rel="stylesheet" href="stylesheets/sign-in.css" title="Estilo del formulario de ingresso" type="text/css" media="screen" charset="utf-8" />
+	
+</head>
+
+<body>
+<header class="docs nav">
+	        <div class="row-fluid">
+		        <div class="brand">
+		              <a href="index.html" rel="prev" target="_self"><img src="images/logo_mammbo_icono.svg" alt="Logo Mammbo"></a>
+	            </div>
+	        </div>
+</header>
+
+<div class="container">
+ <div class="sign-form">
+	<div class="heading">
+		<h1>Bienvenido,</h1>
+	</div>
+	<form class="" method="POST" name="form" novalidate="">
+		<div class="field">
+			<input class="" required="" name="username"  placeholder="Email">
+			<div class="alert simple">Email inválido.</div>
+		</div>
+
+		<div class="field">
+			<input class="" type="password" required="" name="password"  placeholder="Contraseña">
+			<div class="alert simple" >Las contraseña debe contener mínimo 7 caracteres.</div>
+		</div>
+
+		<div>
+			<input class="option-stay-logged" type="checkbox" /> Mantenerme conectado
+		</div>
+				
+		<div class="actions-row">
+			<button class="btn btn-hereda btn-type btn-next icon-arrow-right" type="submit">
+				<span class="">Entrar</span>
+			</button>
+		</div>
+
+		<div class="other-links-layout">
+			<a class="other-links" href="nuevo-usuario.html">No tiene cuenta?</a>
+			<br />
+			<a class="other-links" href="/forgot">Ha olvidado su contraseña?</a>
+		</div>
+	</form>
+		
+ </div>
+</div>
+
+
+<script>
+	setInterval(function() {
+	$('#signup input:visible').each(function(){
+	$(this).trigger('input');
+	});
+	}, 300);
+</script>
+
+</body>
+</html>
+ 

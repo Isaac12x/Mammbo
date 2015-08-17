@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perfil de usuario - Mammbo</title>
+	
+		<meta charset="UTF-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-language" content="es_ES" />
+		<meta name="title" content="Bienvenido a tu perfil. Aquí puedes editar tus datos así como añadir otros. - Mammbo" />
+		<meta name="author" content="Mammbo" />
+		<meta name="description" content="Configura tu anuncio en 10 minutos y encuentra tu casa, piso, garage o párking" />
+		<meta name="keywords" content="casa, piso, parking, comprar casa, comprar piso, alquilar casa, alquilar piso, busco casa, busco piso, plaza de parking" />
+		<meta name="copyright" content="Mammbo, busca-encuentra inmueble" />
+		<meta name="robots" content="configuration,follow" />
+		<meta name="googlebot" content="configuration,follow" />
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+
+
+		<meta content="@bemammbo" name="twitter:site">
+		<meta content="mammbo.com" name="domain">
+		<meta content="website" property="og:type">
+		
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+	<link rel="stylesheet" href="stylesheet/base.css" />
+	<link rel="stylesheet" href="stylesheet/profile.css" type="text/css" media="screen" charset="utf-8" />
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+	<script type="text/javascript">
+	var onloadCallback = function(){
+		grecaptcha.render('google_captcha',{
+			'sitekey': '6Ld5kwETAAAAALBALYwiRZJRT97Id0FZnVpvNi2O',
+			'theme': 'light'
+		});
+	};
+	</script>
+</head>	
+<body>
+<div class="mobile-nav">
+    <ul>
+      <li class="title">Menú</li>
+      <li><a href="#">+ Anuncio</a></li>
+      <li><a href="#">Vista</a></li>      
+      <li><a href="#">Perfil</a></li>      
+      <li><a href="#">Log out</a></li>
+      <li class="title">Idiomas</li>      
+      <li><a href="lang-CA.html" rel="alternate" hreflang="ca" title="Cambia el idioma a Catlán">CA</a></li> 
+      <li><a href="lang-EN.html" rel="alternate" hreflang="en" title="Change language to English">EN</a></li>     
+    </ul>
+  </div>
+  
+  <header class="docs nav">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="brand animated bounceInLeft">
+          <a href="index.html" rel="prev" target="_self"><img src="images/logo_mammbo_icono.svg" alt="Logo Mammbo"></a>
+        
+          <nav class="right-float animated bounceInRight mobile-hidden tablet-hidden small-screen-hidden">
+            <a href="#" title="Crea tu anuncio personalizado">+ Anuncio</a>
+            <a href="#" title="Retoca tu anuncio para que quede perfecto">Vista</a>
+            <a href="#" rel="follow" title="Entra en tu perfil">Perfil</a>
+            <a href="#" rel="follow" title="Hasta pronto!">Salir</a>
+
+          </nav>
+        </div>
+        <div id="hamburger" class="container nav-toggle show-mobile show-tablet show-small-screen animated bounceInRight">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+<main>
+<h1>Perfil de {{ usuario }}</h1>	
+<form   action="" method="get">
+		<div class="field">
+			<input class="" type="text" required="" name="Nombre" placeholder="Nombre" autofocus />
+			<div class="hidden">Es necesario que escriba su nombre</div>
+		</div>
+
+		<div class="field">
+			<input class="" type="text" required="" name="Apellido"  placeholder="Apellido">
+			<div class="hidden" >Es necesario que escriba su apellido</div>
+		</div>
+								
+		<div class="field">
+				<input class="" type="email"  required="" name="email"  placeholder="Email">
+				<div class="hidden" >Éste correo electrónico no es válido
+				</div>
+		</div>
+								
+		<div class="field">
+				<input class="" type="password"  required="" ng-minlength="6" name="password"  placeholder="Contraseña">
+				<input type="checkbox" name="show-password" id=""> Mostrar la contraseña
+				<a href="/forgot"> Cambiar la contraseña </a>
+				<div class="hidden" >La contraseña debe tener al menos 7 caracteres
+				</div>
+		</div>
+
+
+	<div class="more">
+
+		<div class="field">
+					<input  type="text" name="id"  placeholder="Su DNI/NIF (opcional)">
+		</div>
+		<div class="field">
+					<input  type="text" name="phone" placeholder="Teléfono (opcional)"  />
+		<div>
+		<div class="field">
+					<input type="text"  name="home"  placeholder="Dónde vive? (opcional)"  />
+		</div>
+
+	</div>
+	
+
+	<input class="edit" type="submit" name="save-changes" formmethod="post" formaction="" value="Guardar">
+</form>
+</div>
+</main>
+<footer>
+        <div class="footer-logo text-center">
+            <span>beMammbo</span>
+        </div>
+        <ul>
+            <li>//Mammbo &copy; 2015</li>
+            <li class="font-sm">|</li>
+            <li><a rel="nofollow" href="aviso-legal.html" class="non-active" title="Legalidad de Mammbo">Aviso legal</a></li>
+            <li class="font-sm">|</li>
+            <li><a rel="nofollow" href="politica-de-privacidad.html" class="non-active" title="Nuestra política de privacidad">Política de privacidad</a></li>
+            <li class="font-sm">|</li>
+            <li><a rel="nofollow" href="mailto:mammbo@mammbo.com" class="">Contacto</a></li>
+            <li class="font-sm">|</li>
+        </ul>
+</footer>
+
+<script src="javascript/jquery-2.1.3.min.js"></script>
+
+	</body>
+</html>

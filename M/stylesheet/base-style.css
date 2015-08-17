@@ -1,0 +1,419 @@
+/***************************************************************** 
+*
+*  Page styling
+*
+*****************************************************************/
+
+.container {
+  width: 940px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  background: #fff;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.row-fluid {
+    width: 100%;
+    *zoom: 1;
+}
+
+.row-fluid:after {
+    clear: both;
+}
+
+body {
+  background-image: url('../images/luces-abstractas-fondo.jpg');
+  opacity: 0.9;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.right-float {
+  float: right;
+}
+
+.padding-top{
+  padding-top: 1%;
+}
+
+.styled-font{
+  font-family: 'Helvetica Neue';
+  font-size: 1.7em;
+  font-weight: 200;
+  font-style: oblique;
+}
+
+.padding-right{
+  padding-right: 1%;
+}
+
+.padding-bottom{
+  padding-bottom: 3%;
+}
+
+/***************************************************************** 
+*
+*  Nav tag
+*
+*****************************************************************/
+
+.docs.nav {
+  width: 100%;
+  position: relative;
+  top: 0;
+  background-color: #fff;
+  padding: 1rem 0;
+  border-bottom: 2px solid #ddd;
+}
+
+.docs .brand{
+  margin-left: 5%;
+  opacity: 0.9;
+}
+
+.docs nav a {
+  text-decoration: none;
+  color: #85b91e;
+  padding: 1rem 2rem;
+  display: inline-block;
+  float: left;
+  border-bottom: 3px #85b91e solid;
+  -webkit-transition: color 0.7s;
+  transition: color 0.7s;
+}
+
+.docs nav a:hover {
+  color: #658d17;
+  opacity: 0.7;
+  text-decoration: none;
+  background-color: transparent;
+  border-bottom: 3px #fff solid;
+  background-color: #85b91e;
+  -webkit-transition: background-color 700ms linear;
+  -moz-transition: background-color 700ms linear;
+  -o-transition: background-color 700ms linear;
+  -ms-transition: background-color 700ms linear;
+  transition: background-color 700ms linear;
+}
+
+.docs nav a.active {
+  color: #fff;
+}
+
+.docs.nav > li > a {
+  display: block;
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+
+.nav {
+  position: relative;
+  top: 0;
+  background-color: #ffffff;
+}
+
+
+
+/***************************************************************** 
+*
+*  Overlay 
+*
+*****************************************************************/
+
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding-top: 2%;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+}
+
+.overlay ul li a {
+	font-size: 54px;
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #f0f0f0;
+}
+/* Overlay form
+.overlay form {
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay form input {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+}
+
+.overlay form input {
+	font-size: 54px;
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay form input:hover,
+.overlay form input:focus {
+	color: #f0f0f0;
+}
+*/
+/* Overlay style */
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgb(42, 197, 108);
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(../images/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+/***************************************************************** 
+*
+*  Overlay - effects
+*
+*****************************************************************/
+
+.container.overlay-open {
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.overlay-contentscale {
+	visibility: hidden;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+	transition: transform 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-contentscale.open {
+	visibility: visible;
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.label-overlay{
+	font-size: 3.7em;
+	font-family: 'Lato', 'Helvetica Neue', sans-serif;
+	font-weight: 300;
+	color: #eee;
+}
+
+
+/***************************************************************** 
+*
+*  Social
+*
+*****************************************************************/
+
+.docs-version {
+  color: #777777;
+  margin: 0;
+  padding: 0 0 1rem 0;
+  text-align: center;
+  width: inherit;
+}
+
+.feature-section-title {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 200;
+  font-size: 1.5em;
+}
+
+.social-alignment{
+  text-align: center;
+}
+
+.schema-social-btns {
+  padding-top: 1.3rem;
+}
+
+.schema-social-btns > li {
+  display: inline-block;
+  line-height: 1;
+}
+
+.schema-social-btns .gh-btn{
+  overflow: hidden;
+  margin: 0 .5rem;
+  display: inline-block;
+}
+
+.facebook{
+  height: 200px;
+  width: 200px;
+  opacity: 0.3;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.facebook:hover{
+  display: block;
+  height: 200px;
+  width: 200px;
+  opacity: 1;
+}
+
+.twitter{
+  height: 200px;
+  width: 200px;
+  opacity: 0.3;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.twitter:hover{
+  display:block;
+  height: 200px;
+  width: 200px;
+  opacity: 1;
+}
+
+.gplus{
+  height: 200px;
+  width: 200px;
+  opacity: 0.3;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.gplus:hover{
+  display: block;
+  height: 200px;
+  width: 200px;
+  opacity: 0.9;
+  
+}
+
+/***************************************************************** 
+*
+*  Footer
+*
+*****************************************************************/
+
+footer {
+  border-top: 1px solid #eeeeee;
+  background-color: #fafafa;
+  margin-top: 3rem;
+  width: 100%;
+  float: left;
+}
+
+footer p {
+  padding: 0 21%;
+  margin: 3rem 0;
+}
+
+footer ul {
+  color: #85b91e;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 3rem;
+  clear: both;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0 .25rem;
+}
+
+footer ul li a {
+  font-weight: 700;
+  border: none;
+}
+
+.footer-logo {
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  font-family: 'Helvetica Neue';
+}
+
+.footer-logo span {
+  border: 1px solid #85b91e;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  padding: 3px 11px;
+  background-color: #85b91e;
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}

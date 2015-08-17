@@ -1,0 +1,40 @@
+  background-image: url("/images/noise.png"), -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 750, color-stop(0%, rgb(247, 147, 30)), color-stop(100%, rgb(241, 90, 36)));
+  background-image: url("/images/noise.png"), -webkit-radial-gradient(top center, rgb(247, 147, 30), rgb(241, 90, 36) 750px);
+  background-image: url("/images/noise.png"), -moz-radial-gradient(top center, #f7931e, #f15a24 750px);
+  background-image: url("/images/noise.png"), -o-radial-gradient(top center, #f7931e, #f15a24 750px);
+  background-image: url("/images/noise.png"), -ms-radial-gradient(top center, #f7931e, #f15a24 750px);
+  background-image: url("/images/noise.png"), radial-gradient(top center, #f7931e, #f15a24 750px);
+
+
+/* Efecte hover molt maco */
+.overlay ul {
+	list-style: none;
+	padding-top: 2%;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+}
+
+.overlay ul li input {
+	font-size: 54px;
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #cac9c9;
+	transition: 300ms linear;
+}
