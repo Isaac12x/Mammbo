@@ -1,3 +1,3 @@
 # Mammbo
 
-El buscador de inmuebles más efectivo del mundo (en construcción) :)
+The world's most effective Real State searcher (on stand by) :)
